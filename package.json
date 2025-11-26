@@ -13,13 +13,13 @@
         "fs": "^0.0.2",
         "http": "^0.0.0",
         "mysql": "^2.10.2",
-        "underscore": "^1.8.3",
+        "quad-node": "^1.0.5",
         "sys": "^0.0.1",
+        "underscore": "^1.8.3",
+        "url": "^0.11.0",
         "vector2-node": "^0.0.3",
         "ws": "^1.0.1",
-        "url": "^0.11.0"
-    },
-    "devDependencies": {
+        "xmlhttprequest": "^1.8.0"
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"

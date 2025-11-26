@@ -6,7 +6,7 @@ function AddNode(playerTracker, item) {
 module.exports = AddNode;
 
 AddNode.prototype.build = function (protocol) {
-    var buffer = new Buffer(5);
+    var buffer = Buffer.alloc(5);
     buffer.writeUInt8(0x20, 0, true);
     buffer.writeUInt32LE((this.item.nodeId ^ this.playerTracker.scrambleId) >>> 0, 1, true);
     return buffer;

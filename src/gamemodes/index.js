@@ -5,6 +5,7 @@ module.exports = {
     Experimental: require('./Experimental'),
     Halloween: require('./Halloween'),
     Christmas: require('./Christmas'),
+    Leap: require('./Leap'),
     LMS: require('./LMS'),
     Tournament: require('./Tournament'),
     HungerGames: require('./HungerGames'),
@@ -61,6 +62,10 @@ var get = function (id) {
         case 15:
             // Virus OFF
             mode = new module.exports.VirusOff();
+            break;
+        case 16:
+            // Leap
+            mode = new module.exports.Leap();
             break;
         case 20:
             // Rainbow

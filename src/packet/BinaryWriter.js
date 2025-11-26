@@ -116,7 +116,7 @@ BinaryWriter.prototype.writeStringZeroUnicode = function (value) {
 };
 
 BinaryWriter.prototype.toBuffer = function () {
-    var buffer = new Buffer(this._length);
+    var buffer = Buffer.alloc(this._length);
     for (var i = 0; i < this._writers.length; i++) {
         this._writers[i](buffer);
     }
